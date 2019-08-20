@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template NONE?>
+<?import com.vaadin.flow.component.button.Button?>
+<?import com.vaadin.flow.component.checkbox.Checkbox?>
+<?import com.vaadin.flow.component.datepicker.DatePicker?>
+<?import com.vaadin.flow.component.orderedlayout.HorizontalLayout?>
+<?import com.vaadin.flow.component.orderedlayout.VerticalLayout?>
+<?import com.vaadin.flow.component.textfield.NumberField?>
+<?import com.vaadin.flow.component.textfield.TextArea?>
+<?import com.vaadin.flow.component.textfield.TextField?>
+<?import com.vaadin.flow.component.timepicker.TimePicker?>
+<VerticalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="MainLayout" x:route="">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <HorizontalLayout x:name="horizontalLayout">
+        <x:constraints width="-1px" height="-1px" flex-grow="0.0" />
+        <Button x:name="cmdSave" text="Save">
+            <x:icon src="com.flowingcode.vaadin.addons.ironicons.IronIcons#SAVE" />
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+        <Button enabled="false" x:name="cmdLoad" text="Load">
+            <x:icon src="com.flowingcode.vaadin.addons.ironicons.IronIcons#OPEN_IN_BROWSER" />
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+    </HorizontalLayout>
+    <TextField x:name="textField" x:persist="true" x:persistValue="true">
+        <x:constraints width="0px" height="0px" flex-grow="0.0" />
+    </TextField>
+    <TextArea x:name="textArea" x:persist="true" x:persistValue="true">
+        <x:constraints width="0px" height="0px" flex-grow="0.0" />
+    </TextArea>
+    <NumberField x:name="numberField" x:persist="true" x:persistValue="true">
+        <x:constraints width="0px" height="0px" flex-grow="0.0" />
+    </NumberField>
+    <Checkbox x:name="checkbox" x:persist="true" label="Checkbox" x:persistValue="true">
+        <x:constraints width="0px" height="0px" flex-grow="0.0" />
+    </Checkbox>
+    <DatePicker x:name="datePicker" x:persist="true" x:persistValue="true">
+        <x:constraints width="0px" height="0px" flex-grow="0.0" />
+    </DatePicker>
+    <TimePicker x:name="timePicker" x:persist="true" x:persistValue="true">
+        <x:constraints width="0px" height="0px" flex-grow="0.0" />
+    </TimePicker>
+</VerticalLayout>
+
